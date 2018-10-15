@@ -11,7 +11,7 @@ sensor = W1ThermSensor()                    # 1 Wire Temperature Sensor
 K1 = OutputDevice(17, active_high=False)    # Relay1 FAN
 sleepT = 60                                 # sleep.time()
 tempH = 28                                  # temperature treshold
-log = "/home/thomas/scripts/fan_control.log"
+log = "/home/user/fan_control.log"          # log location 
 
 def log_off():
   tempC = sensor.get_temperature()
